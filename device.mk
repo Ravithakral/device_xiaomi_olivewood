@@ -378,6 +378,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_HOST_PACKAGES += \
     signapk
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
