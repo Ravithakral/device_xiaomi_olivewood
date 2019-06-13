@@ -411,9 +411,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system system
 
-    #Start move time data to /data/vendor once post-fs-data done
-    start vendor.move_time_data
-
     start vendor.qcrild
     start vendor.qcrild2
 
@@ -508,14 +505,6 @@ on property:ro.data.large_tcp_window_size=true
 on property:sys.sysctl.tcp_adv_win_scale=*
     write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
 
-# Data Migration
-service vendor.move_wifi_data /vendor/bin/move_wifi_data.sh
-    class main
-    user  wifi
-    group wifi
-    disabled
-    oneshot
-
 service loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
@@ -562,13 +551,6 @@ on charger
 
 on property:vendor.display.lcd_density=*
     setprop ro.sf.lcd_density ${vendor.display.lcd_density}
-
-service vendor.move_time_data /vendor/bin/move_time_data.sh
-    class main
-    user system
-    group system
-    disabled
-    oneshot
 
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override

@@ -287,9 +287,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sh \
-    move_time_data.sh \
-    move_wifi_data.sh
+    init.qcom.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
