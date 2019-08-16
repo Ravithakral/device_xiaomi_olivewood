@@ -453,5 +453,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     XiaomiDoze
 
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts \
+    init.xiaomiparts.rc \
+    init.xiaomiparts.sh
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/olivewood/olivewood-vendor.mk)
