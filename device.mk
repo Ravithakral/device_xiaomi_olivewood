@@ -126,7 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapstartsize=16m
 
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Display
 PRODUCT_PACKAGES += \
@@ -445,3 +445,8 @@ PRODUCT_BOOT_JARS += \
 # XiaomiDoze
 PRODUCT_PACKAGES += \
     XiaomiDoze
+
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
