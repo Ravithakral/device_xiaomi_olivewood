@@ -26,9 +26,6 @@
     <string name="ambient_display_xiaomi">Xiaomi Doze</string>
     <string name="advanced_doze_summary">环境显示</string>
 
-    <string name="vibration_title">触觉反馈</string>
-    <string name="vibration_strength_title">强度</string>
-
     <!-- Thermal Profiles -->
     <string name="thermal_profile_title">性能</string>
     <string name="thermal_title">性能选项</string>

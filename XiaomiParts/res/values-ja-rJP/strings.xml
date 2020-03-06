@@ -26,9 +26,6 @@
     <string name="ambient_display_xiaomi">Xiaomi Doze</string>
     <string name="advanced_doze_summary">アンビエント画面</string>
 
-    <string name="vibration_title">振動フィードバック</string>
-    <string name="vibration_strength_title">強さ</string>
-
     <!-- Thermal Profiles -->
     <string name="thermal_profile_title">パフォーマンス</string>
     <string name="thermal_title">パフォーマンスの設定</string>

@@ -28,9 +28,6 @@
     <string name="ambient_display_xiaomi">Дозе Xiaomi</string>
     <string name="advanced_doze_summary">Ambient экран</string>
 
-    <string name="vibration_title">Вибрация</string>
-    <string name="vibration_strength_title">Сила</string>
-
     <!-- Thermal Profiles -->
     <string name="thermal_profile_title">Производительность</string>
     <string name="thermal_title">Настройки производительности</string>

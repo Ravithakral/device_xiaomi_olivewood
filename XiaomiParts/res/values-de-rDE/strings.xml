@@ -18,7 +18,6 @@
     <string name="advanced_settings_summary">Erweiterte Einstellungen</string>
     <string name="display_title">Display</string>
     <string name="device_kcal_title">Displaykalibierung</string>
-    <string name="vibration_strength_title">Stärke</string>
 
     <!-- Thermal Profiles -->
     <string name="thermal_profile_title">Temperatur</string>
@@ -31,7 +30,6 @@
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_balance">Balance</string>
     <string name="thermal_extreme_battery">Energiesparen</string>
-    <string name="vibration_title">Haptisches Feedback</string>
 
     <!-- Dirac settings -->
     <string name="dirac_title">Mi Klangverbesserung</string>

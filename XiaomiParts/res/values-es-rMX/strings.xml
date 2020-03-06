@@ -22,9 +22,6 @@
     <!-- KCal -->
     <string name="device_kcal_title">Calibrar Color de Pantalla </string>
 
-    <string name="vibration_title">Retroalimentación háptica</string>
-    <string name="vibration_strength_title">Fuerza</string>
-
     <!-- Thermal Profiles -->
     <string name="thermal_profile_title">Rendimiento</string>
     <string name="thermal_title">Ajustes de Rendimiento</string>
