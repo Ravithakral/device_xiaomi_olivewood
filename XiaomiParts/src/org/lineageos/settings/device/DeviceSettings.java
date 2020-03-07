@@ -47,7 +47,12 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_HALL_WAKEUP = "hall";
     public static final String HALL_WAKEUP_PATH = "/sys/module/hall/parameters/hall_toggle";
 
+    public static final String CATEGORY_FASTCHARGE = "usb_fastcharge";
+    public static final String PREF_USB_FASTCHARGE = "fastcharge";
+    public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
+
     private SecureSettingListPreference mTHERMAL;
+    private SecureSettingSwitchPreference mFastcharge;
     public SecureSettingSwitchPreference mBacklightDimmer;
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -107,6 +112,14 @@ public class DeviceSettings extends PreferenceFragment implements
         } else {
             getPreferenceScreen().removePreference(findPreference(CATEGORY_HALL_WAKEUP));
         }
+
+        if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
+            mFastcharge = (SecureSettingSwitchPreference) findPreference(PREF_USB_FASTCHARGE);
+            mFastcharge.setChecked(FileUtils.getFileValueAsBoolean(USB_FASTCHARGE_PATH, true));
+            mFastcharge.setOnPreferenceChangeListener(this);
+        } else {
+            getPreferenceScreen().removePreference(findPreference(CATEGORY_FASTCHARGE));
+        }
     }
 
     @Override
@@ -152,6 +165,10 @@ public class DeviceSettings extends PreferenceFragment implements
 
             case PREF_HALL_WAKEUP:
                 FileUtils.setValue(HALL_WAKEUP_PATH, (boolean) value ? "Y" : "N");
+                break;
+
+            case PREF_USB_FASTCHARGE:
+                FileUtils.setValue(USB_FASTCHARGE_PATH, (boolean) value);
                 break;
 
             default:

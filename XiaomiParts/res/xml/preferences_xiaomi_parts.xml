@@ -97,4 +97,15 @@
             android:title="@string/hall_title"
             android:icon="@drawable/ic_flip" />
     </PreferenceCategory>
+    <PreferenceCategory
+        android:key="usb_fastcharge"
+        android:title="USB Fastcharge" >
+
+        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+            android:key="fastcharge"
+            android:defaultValue="true"
+            android:title="Enable USB Fastcharge"
+            android:icon="@drawable/ic_usb_fastcharge"
+            android:summary="Charge upto 900mA when connected to a computer via USB 3.0 port" />
+    </PreferenceCategory>
 </PreferenceScreen>
