@@ -42,7 +42,7 @@ public class FileUtils {
             }
             try {
                 FileOutputStream fos = new FileOutputStream(new File(path));
-                fos.write((value ? "1" : "0").getBytes());
+                fos.write((value ? "Y" : "N").getBytes());
                 fos.flush();
                 fos.close();
             } catch (IOException e) {
@@ -110,6 +110,36 @@ public class FileUtils {
             return null;
         }
         // ignore
+        return line;
+    }
+    static boolean getFileValueAsBoolean(String filename, boolean defValue) {
+        String fileValue = readLine(filename);
+        if (fileValue != null) {
+            return !fileValue.equals("N");
+        }
+        return defValue;
+    }
+
+    static String readLine(String filename) {
+        if (filename == null) {
+            return null;
+        }
+        BufferedReader br = null;
+        String line;
+        try {
+            br = new BufferedReader(new FileReader(filename), 1024);
+            line = br.readLine();
+        } catch (IOException e) {
+            return null;
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    // ignore
+                }
+            }
+        }
         return line;
     }
 }

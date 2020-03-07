@@ -112,6 +112,9 @@ on early-boot
     chown root system /sys/devices/platform/kcal_ctrl.0/kcal_cont
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
 
+    # Backlight Dimmer
+    chown system system /sys/module/mdss_fb/parameters/backlight_dimmer
+    chmod 0660 /sys/module/mdss_fb/parameters/backlight_dimmer
     # Graphics
     chown system graphics /sys/class/graphics/fb0/idle_time
     chmod 0664 /sys/class/graphics/fb0/idle_time

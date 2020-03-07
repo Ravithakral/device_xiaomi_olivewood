@@ -30,6 +30,13 @@
                 android:targetClass="org.lineageos.settings.kcal.KCalSettingsActivity"
                 android:targetPackage="org.lineageos.settings.kcal" />
         </Preference>
+
+        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="backlight_dimmer"
+            android:icon="@drawable/ic_backlight"
+            android:title="Backlight Dimmer"
+            android:summary="Dim the display to the maximum value" /> 
     </PreferenceCategory>
 
     <PreferenceCategory
