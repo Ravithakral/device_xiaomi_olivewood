@@ -307,7 +307,10 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    GCamGo   
+    GCamGo
+
+# Property 
+-include device/xiaomi/olivewood/product/tweaks.mk
 
 # QMI
 PRODUCT_PACKAGES += \
