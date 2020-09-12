@@ -283,7 +283,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    NotchBarKiller
+    NotchBarKiller \
+    PixelOverlay
 
 # Power
 PRODUCT_PACKAGES += \
@@ -302,7 +303,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     GCamGo
 
-# Property 
+# Property
 -include device/xiaomi/olivewood/product/tweaks.mk
 
 # QMI
