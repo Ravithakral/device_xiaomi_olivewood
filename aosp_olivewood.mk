@@ -26,6 +26,9 @@ TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED = true
 
+# Offline Charging
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_olivewood
 PRODUCT_DEVICE := olivewood
