@@ -3577,7 +3577,7 @@ vendor/bin/wigighalsvc
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
 vendor/etc/Conf_MultipleTest.ini
-vendor/etc/device_features/pine.xml
+vendor/etc/device_features/olive.xml
 vendor/etc/ftm_test_config_wcd9335
 vendor/etc/hostapd/hostapd.accept
 vendor/etc/hostapd/hostapd.deny

@@ -1,12 +1,12 @@
 Copyright (C) 2021 - The LineageOS Project
 
-  Device tree for Xiaomi Redmi 7A (_pine_)
+  Device tree for Xiaomi Redmi 8A Dual (_olivewood_)
   ==============
  
-  The Xiaomi Redmi 7A (codenamed "Pine") is an 
+  The Xiaomi Redmi 8A Dual (codenamed "Olivewood") is an 
 budget smartphone from Xiaomi.
  
-  It was announced and released in May 2019.
+  It was announced and released in May 2020.
  
   ## Device specifications
  
@@ -26,9 +26,6 @@ budget smartphone from Xiaomi.
  Front camera | 5 MP, f/2.2      
  
  
-  ## Device picture
- 
-  ![Xiaomi Redmi 7A ](https://www.91-img.com/gallery_images_uploads/5/9/5900040c1a3e52f218735b3ce9fc81ccd4eeff3d.jpg?tr=h-630,q-75 "Xiaomi Redmi 7A")
 
 
  

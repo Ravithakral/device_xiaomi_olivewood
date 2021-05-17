@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.light@2.0-service.pine"
+#define LOG_TAG "android.hardware.light@2.0-service.olivewood"
 
 #include <hidl/HidlTransportSupport.h>
 

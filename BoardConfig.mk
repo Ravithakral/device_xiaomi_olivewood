@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/pine
+DEVICE_PATH := device/xiaomi/olivewood
 
 # Architecture
 TARGET_ARCH := arm64
@@ -148,8 +148,8 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 an
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_SOURCE := kernel/xiaomi/pine
-TARGET_KERNEL_CONFIG := pine-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm439
+TARGET_KERNEL_CONFIG := olive-perf_defconfig
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_VERSION := 4.9
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -160,7 +160,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := pine
+TARGET_OTA_ASSERT_DEVICE := olivewood
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -216,4 +216,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/pine/BoardConfigVendor.mk
+-include vendor/xiaomi/olives/BoardConfigVendor.mk

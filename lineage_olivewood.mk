@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from pine device
-$(call inherit-product, device/xiaomi/pine/device.mk)
+# Inherit from olivewood device
+$(call inherit-product, device/xiaomi/olivewood/device.mk)
 
 # Inherit some dotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
@@ -27,15 +27,15 @@ DOT_OFFICIAL := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_pine
-PRODUCT_DEVICE := pine
+PRODUCT_NAME := lineage_olivewood
+PRODUCT_DEVICE := olivewood
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 7A
+PRODUCT_MODEL := Redmi 8A Dual
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="pine" \
-    TARGET_DEVICE="pine"
+    PRODUCT_NAME="olivewood" \
+    TARGET_DEVICE="olivewood"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
