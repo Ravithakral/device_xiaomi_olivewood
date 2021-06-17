@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "vendor_xiaomi_olivewood",
+    "target_path": "vendor/xiaomi/olives"
+  },
+  {
+    "repository": "kernel_xiaomi_olivewood",
+    "target_path": "kernel/xiaomi/sdm439"
+  }
+]
