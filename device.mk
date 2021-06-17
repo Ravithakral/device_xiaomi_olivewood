@@ -26,6 +26,13 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay/packages/apps/Snap
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI
 
 # ANT
 PRODUCT_PACKAGES += \
@@ -103,7 +110,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    libgui_vendor
+    libgui_vendor \
+    GoogleCameraGo
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -299,6 +307,10 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    GCamGo   
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
@@ -343,7 +355,11 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
