@@ -117,7 +117,7 @@ persist.debug.wfd.enable=1
 
 # PixelPlusUI OFFICIAL
 ro.ppui.device_name=Redmi 8A/8A Dual
-ro.ppui.version=3.4
-ro.ppui.version_code=Onyx
+ro.ppui.version=3.6
+ro.ppui.version_code=Unicorn
 ro.ppui.is_official=true
 ro.ppui.maintainer_name=@sdm439dev
