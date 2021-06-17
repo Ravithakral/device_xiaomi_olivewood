@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The dotOS Project
+# Copyright (C) 2021 The Derpfest Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,23 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from olivewood device
 $(call inherit-product, device/xiaomi/olivewood/device.mk)
 
-# Inherit some dotOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some derpfest stuff.
+$(call inherit-product, vendor/derp/config/common.mk)
 
 # Bootanimation res
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOT_ANIMATION_RES := 1080
 
-# Device Maintainer
-DEVICE_MAINTAINER := AOiSPdev
-
-# Official dotOS
-DOT_OFFICIAL := true
+# Build Status
+DERP_BUILDTYPE := Official
 
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_olivewood
+PRODUCT_NAME := derp_olivewood
 PRODUCT_DEVICE := olivewood
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8A Dual

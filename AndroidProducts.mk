@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_olivewood.mk
+    $(LOCAL_DIR)/derp_olivewood.mk
