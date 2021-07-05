@@ -38,7 +38,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=0
-debug.sf.hw=0
 debug.sf.latch_unsignaled=1
 debug.hwui.renderer=skiagl
 persist.demo.hdmirotationlock=false
