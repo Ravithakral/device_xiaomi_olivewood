@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=0
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
 debug.hwui.renderer=skiagl
 persist.demo.hdmirotationlock=false
 ro.config.avoid_gfx_accel=true
@@ -115,7 +115,7 @@ persist.debug.wfd.enable=1
 
 # PixelPlusUI OFFICIAL
 ro.ppui.device_name=Redmi 8A/8A Dual
-ro.ppui.version=3.6
-ro.ppui.version_code=Unicorn
+ro.ppui.version=3.7
+ro.ppui.version_code=Ragnarok
 ro.ppui.is_official=true
 ro.ppui.maintainer_name=@sdm439dev
