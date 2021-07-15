@@ -148,6 +148,9 @@ ro.config.sdha_apps_bg_min=8
 persist.service.lgospd.enable=0
 persist.service.pcsync.enable=0
 
+# Shutdown
+ro.build.shutdown_timeout=2
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
