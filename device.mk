@@ -306,6 +306,13 @@ PRODUCT_PACKAGES += \
 # Property
 -include device/xiaomi/olivewood/product/tweaks.mk
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@1.0.vendor \
+    vendor.qti.hardware.perf@2.0.vendor \
+    vendor.qti.hardware.perf@2.1.vendor \
+    vendor.qti.hardware.perf@2.2.vendor
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
