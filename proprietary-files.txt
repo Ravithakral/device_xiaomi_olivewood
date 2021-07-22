@@ -6221,6 +6221,7 @@ vendor/lib64/libcacertclient.so
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/libcheckpid.so
 vendor/lib64/libdiagjni.so
+vendor/lib64/deviceInfoServiceModule.so
 vendor/lib64/libfastcrc.so
 vendor/lib64/libgameoptfeature.so
 vendor/lib64/libjnihelper.so
