@@ -6,3 +6,6 @@ allow init sysfs_leds:lnk_file read;
 allow init proc:file write;
 allow init init:unix_stream_socket { connectto };
 allow init proc_last_kmsg:file setattr;
+
+# FM
+allow init sysfs_fm_lan:file rw_file_perms;

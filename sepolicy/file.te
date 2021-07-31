@@ -4,6 +4,9 @@ type proc_boot_reason, fs_type, proc_type;
 # Camera
 type camera_socket, file_type, data_file_type;
 
+# FM
+type sysfs_fm_lan, fs_type, sysfs_type;
+
 # /proc
 type proc_last_kmsg, fs_type, proc_type;
 
