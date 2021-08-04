@@ -1,7 +1,7 @@
 [
   {
     "repository": "vendor_xiaomi_olivewood",
-    "target_path": "vendor/xiaomi/olives"
+    "target_path": "vendor/xiaomi/olivewood"
   },
   {
     "repository": "kernel_xiaomi_olivewood",
