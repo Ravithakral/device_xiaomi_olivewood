@@ -70,7 +70,7 @@ ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
 # Screen density
-ro.sf.lcd_density=320
+ro.sf.lcd_density=360
 
 # WFD
 persist.debug.wfd.enable=1

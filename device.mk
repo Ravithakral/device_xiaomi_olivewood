@@ -15,13 +15,13 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1440
+TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -186,7 +186,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.pine
+    android.hardware.light@2.0-service.olivewood
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -304,6 +304,10 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -377,4 +381,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/pine/pine-vendor.mk)
+$(call inherit-product, vendor/xiaomi/olivewood/olivewood-vendor.mk)
