@@ -59,6 +59,13 @@ vendor.vidc.dec.downscalar_width=1920
 vendor.vidc.enc.disable_bframes=1
 vendor.video.disable.ubwc=1
 
+# PixelPlusUI OFFICIAL
+ro.ppui.device_name=Redmi 8A/8A Dual
+ro.ppui.version=3.9
+ro.ppui.version_code=Eternal
+ro.ppui.is_official=true
+ro.ppui.maintainer_name=shield44
+
 # PSI
 ro.lmk.use_psi=true
 ro.lmk.swap_util_max=100
