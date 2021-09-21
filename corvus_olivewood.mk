@@ -26,7 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 #TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := havoc_olivewood
+PRODUCT_NAME := corvus_olivewood
 PRODUCT_DEVICE := olivewood
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8A/8A Dual
