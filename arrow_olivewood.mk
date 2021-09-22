@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/olivewood/device.mk)
 # Inherit some aosp stuff.
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-$(call inherit-product, vendor/arrow/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # PixelPlusUI flags
 #CUSTOM_BUILD_TYPE := OFFICIAL
