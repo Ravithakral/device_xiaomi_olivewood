@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/olivewood/device.mk)
 # Inherit some aosp stuff.
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # PixelPlusUI flags
 #CUSTOM_BUILD_TYPE := OFFICIAL
@@ -26,7 +26,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 #TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_olivewood
+PRODUCT_NAME := aosp_olivewood
 PRODUCT_DEVICE := olivewood
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8A/8A Dual
