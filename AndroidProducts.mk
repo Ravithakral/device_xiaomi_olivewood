@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_olivewood.mk
+    $(LOCAL_DIR)/aosp_olivewood.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_olivewood-user \
-    arrow_olivewood-userdebug \
-    arrow_olivewood-eng
+    aosp_olivewood-user \
+    aosp_olivewood-userdebug \
+    aosp_olivewood-eng
