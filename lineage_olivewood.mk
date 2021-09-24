@@ -16,14 +16,14 @@ $(call inherit-product, device/xiaomi/olivewood/device.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 EVO_BUILD_TYPE := UNOFFICIAL
 EVO_MAINTAINER := ASIM_RANJHA
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_olivewood
+PRODUCT_NAME := lineage_olivewood
 PRODUCT_DEVICE := olivewood
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 8A/8A Dual
